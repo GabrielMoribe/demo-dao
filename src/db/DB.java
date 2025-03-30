@@ -1,5 +1,6 @@
 package db;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.*;
@@ -30,9 +31,10 @@ public class DB {
             props.load(fs);
             return props;
         }
-        catch(IOException e){
-            throw new DbException("Erro ao carregar arquivo de propriedades\nERRO: " + e.getMessage() + "\n");
+        catch (IOException e) {
+            throw new DbException("Erro ao carregar arquivo de propriedades no caminho: " + new File("db.properties").getAbsolutePath() + "\nERRO: " + e.getMessage());
         }
+
 
     }
     public static void closeStatement(Statement st){

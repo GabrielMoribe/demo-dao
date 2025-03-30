@@ -14,4 +14,5 @@ public interface SellerDao {
     // RETORNA UM OBJ DEPARTMENT
     Seller findById(Integer id);
     List<Seller> findAll();
+    List<Seller> findByDepartment(Department department);
 }

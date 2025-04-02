@@ -38,7 +38,7 @@ public class Seller implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
-    public String getEmail(String email) {
+    public String getEmail() {
         return email;
     }
     public void setEmail(String email) {
@@ -50,7 +50,7 @@ public class Seller implements Serializable {
     public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
     }
-    public Double getBaseSalary(Double baseSalary) {
+    public Double getBaseSalary() {
         return baseSalary;
     }
     public void setBaseSalary(Double baseSalary) {
